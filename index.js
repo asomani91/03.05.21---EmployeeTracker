@@ -32,3 +32,23 @@ con.connect(function (err) {
         if (err) throw err;
         console.log("Emplyee Table created");
     });
+
+    inquirer.prompt([
+        {
+            type: "list",
+            name: "list",
+            message: "Add to Department, Role or Employee",
+            choices: ["Add Employee,Role & Department", "View Employee, Role & Department", "Update Employee Roles"],
+        },
+        {
+            type: "list",
+            name: "which",
+            message: "Select Where You'd Like To Add",
+            choices: ["Department", "Employee", "Role"],
+            when: (answers) => answers.list == "Add Employee, Role, & Department"
+        },
+        {
+            type: "input",
+            name: "which",
+            message: "Enter Employee ID and Role ID to update",
+            when: (answers) => answers.list == "Update employee roles",

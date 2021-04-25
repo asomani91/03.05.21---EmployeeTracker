@@ -6,6 +6,7 @@ LINKS
 
 https://github.com/asomani91/03.05.21---EmployeeTracker
 
+![GIF](https://github.com/asomani91/03.05.21---EmployeeTracker/blob/main/ECommerceBackEnd.gif)
 
 -----
 
